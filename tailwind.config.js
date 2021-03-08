@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./html/**/*.tmpl',],
+  purge: [./ html/**/ *html],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
