@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite", // start dev server
+    "build": "vite build", // build for production
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,12 @@
   },
   "homepage": "https://github.com/deliri/cinkin#readme",
   "devDependencies": {
+    "@tailwindcss/forms": "0.2.1",
     "autoprefixer": "10.2.5",
     "postcss": "8.2.7",
     "tailwindcss": "2.0.3"
+  },
+  "dependencies": {
+    "vite": "2.0.5"
   }
 }
