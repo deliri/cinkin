@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+					<link rel="stylesheet" href="/public/css/tailwind.css">
+						<title>Create a new post</title>
+					</head>
+					<body class="bg-gray-100">
+						<section class="container px-5 py-24 mx-auto">
+							<form action="/post" method="post">
+								<div class="md:grid md:grid-cols-3 md:gap-6">
+									<div class="md:col-span-1">
+										<div class="px-4 sm:px-0">
+											<h3 class="text-lg font-medium leading-6 text-gray-900">Meta Section</h3>
+											<p class="mt-1 text-sm text-gray-900">
+                            This is area for SEO optimization
+                        </p>
+										</div>
+									</div>
+									<div class="mt-5 md:mt-0 md:col-span-2">
+										<form action="#" method="POST">
+											<div class="shadow sm:rounded-md sm:overflow-hidden">
+												<div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+													<div class="grid grid-cols-3 gap-6">
+														<div class="col-span-3 sm:col-span-2">
+															<label for="company_website" class="block text-sm font-medium text-gray-900">
+                                            Meta Description (140 characters)
+                                        </label>
+															<div class="mt-1 flex rounded-md shadow-sm">
+																<input type="text" name="company_website" id="company_website"
+                                                class="focus:ring-indigo-500  focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-900"
+                                                placeholder="how to use a span tag in html">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="hidden sm:block" aria-hidden="true">
+									<div class="py-5">
+										<div class="border-t border-gray-200"></div>
+									</div>
+								</div>
+								<div class="mt-10 sm:mt-0">
+									<div class="md:grid md:grid-cols-3 md:gap-6">
+										<div class="md:col-span-1">
+											<div class="px-4 sm:px-0">
+												<h3 class="text-lg font-medium leading-6 text-gray-900">What?</h3>
+												<p class="mt-1 text-sm text-gray-600">
+                                Topic of discussion
+                            </p>
+											</div>
+										</div>
+										<div class="mt-5 md:mt-0 md:col-span-2">
+											<form action="#" method="POST">
+												<div class="shadow overflow-hidden sm:rounded-md">
+													<div class="px-4 py-5 bg-white sm:p-6">
+														<div class="grid grid-cols-6 gap-6">
+															<div class="col-span-6 sm:col-span-6">
+																<label for="first_name"
+                                                class="block text-sm font-medium text-gray-700">Title</label>
+																<input type="text" name="title" id="title" autocomplete="title"
+                                                placeholder="HTML div elements"
+                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+																</div>
+																<div class="col-span-6 sm:col-span-3">
+																	<label for="date"
+                                                class="block text-sm font-medium text-gray-700">Date</label>
+																	<input type="date" name="date" id="date"
+                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+																	</div>
+																	<div class="col-span-6 sm:col-span-4">
+																		<label for="author"
+                                                class="block text-sm font-medium text-gray-700">Author</label>
+																		<input type="author" name="author" id="author" placeholder="Ase Deliri"
+                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+																		</div>
+																		<div class="col-span-6 sm:col-span-3">
+																			<label for="category"
+                                                class="block text-sm font-medium text-gray-700">Category</label>
+																			<select id="category" name="category" autocomplete="category"
+                                                class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+																				<option>Linux</option>
+																				<option>HTML</option>
+																				<option>CSS</option>
+																				<option>Javascript</option>
+																				<option>Algorithms</option>
+																				<option>Go</option>
+																				<option>Swift</option>
+																				<option>Networking</option>
+																				<!-- <option>CSS</option> -->
+																			</select>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</form>
+													</div>
+												</div>
+											</div>
+											<div class="hidden sm:block" aria-hidden="true">
+												<div class="py-5">
+													<div class="border-t border-gray-200"></div>
+												</div>
+											</div>
+											<div class="mt-10 sm:mt-0">
+												<div class="md:grid md:grid-cols-3 md:gap-6">
+													<div class="md:col-span-1">
+														<div class="px-4 sm:px-0">
+															<h3 class="text-lg font-medium leading-6 text-gray-900">How?</h3>
+															<p class="mt-1 text-sm text-gray-600">
+                                How is this used?
+                            </p>
+														</div>
+													</div>
+													<div class="mt-5 md:mt-0 md:col-span-2">
+														<form action="#" method="POST">
+															<div class="shadow overflow-hidden sm:rounded-md">
+																<div class="px-4 py-5 bg-white sm:p-6">
+																	<div class="grid grid-cols-6 gap-6">
+																		<div class="col-span-6 sm:col-span-6">
+																			<label for="root"
+                                                class="block text-sm font-medium text-gray-700">Root</label>
+																			<input type="text" name="root" id="root" autocomplete="root"
+                                                placeholder="why was this created?"
+                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</form>
+														</div>
+													</div>
+												</div>
+												<div class="hidden sm:block" aria-hidden="true">
+													<div class="py-5">
+														<div class="border-t border-gray-200"></div>
+													</div>
+												</div>
+												<div class="mt-10 sm:mt-0">
+													<div class="md:grid md:grid-cols-3 md:gap-6">
+														<div class="md:col-span-1">
+															<div class="px-4 sm:px-0">
+																<h3 class="text-lg font-medium leading-6 text-gray-900">Why?</h3>
+																<p class="mt-1 text-sm text-gray-600">
+                                The purpose of this.
+                            </p>
+															</div>
+														</div>
+														<div class="mt-5 md:mt-0 md:col-span-2">
+															<form action="#" method="POST">
+																<div class="shadow overflow-hidden sm:rounded-md">
+																	<div class="px-4 py-5 bg-white sm:p-6">
+																		<div class="grid grid-cols-6 gap-6">
+																			<div class="col-span-6 sm:col-span-6">
+																				<label for="root"
+                                                class="block text-sm font-medium text-gray-700">Root</label>
+																				<input type="text" name="root" id="root" autocomplete="root"
+                                                placeholder="why was this created?"
+                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</form>
+															</div>
+														</div>
+													</div>
+												</form>
+											</section>
+										</body>
+									</html>
