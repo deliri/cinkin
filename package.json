@@ -1,30 +1,24 @@
 {
-  "name": "cinkin",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "vite", // start dev server
-    "build": "vite build", // build for production
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/deliri/cinkin.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/deliri/cinkin/issues"
-  },
-  "homepage": "https://github.com/deliri/cinkin#readme",
-  "devDependencies": {
-    "@tailwindcss/forms": "0.2.1",
-    "autoprefixer": "10.2.5",
-    "postcss": "8.2.7",
-    "tailwindcss": "2.0.3"
-  },
-  "dependencies": {
-    "vite": "2.0.5"
-  }
+	"name": "cinkin",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "postcss assets/css/tailwind.css -o public/css/styles.css",
+		"watch": "postcss assets/css/tailwind.css -o public/css/styles.css --watch"
+	},
+	"keywords": [],
+	"author": "Ase Deliri",
+	"license": "ISC",
+	"dependencies": {
+		"@fullhuman/postcss-purgecss": "^4.0.0",
+		"@tailwindcss/forms": "0.2.1",
+		"autoprefixer": "^10.1.0",
+		"postcss": "^8.2.1",
+		"postcss-cli": "^8.3.1",
+		"tailwindcss": "^2.0.2"
+	},
+	"devDependencies": {
+		"tailwindcss-debug-screens": "^2.0.0"
+	}
 }
